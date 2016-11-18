@@ -1,3 +1,28 @@
+iso-codes 3.71
+--------------
+Dr. Tobias Quathamer <toddy@debian.org>
+Tue, 15 Nov 2016
+
+  [ ISO 3166-1 ]
+  * Add short name of Czechia. Thanks to Jiri Bohac for the bug report
+    and patch. Closes: alioth#315551
+
+  [ ISO 3166-2 ]
+  * Update from iso.org for Czechia
+
+  [ ISO 3166-1 translations ]
+  * Indonesian by Andhika Padmawan (TP)
+  * Czech by Jiri Bohac
+  * German by Jiri Bohac
+  * French by Jiri Bohac
+
+  [ ISO 3166-2 translations ]
+  * German by Dr. Tobias Quathamer
+
+  [ ISO 4217 translations ]
+  * Indonesian by Andhika Padmawan (TP)
+
+
 iso-codes 3.70
 --------------
 Dr. Tobias Quathamer <toddy@debian.org>
@@ -14,6 +39,9 @@ Mon, 29 Aug 2016
 
   [ ISO 639-2 translations ]
   * Swedish by Anders Jonsson (TP)
+
+  [ ISO 3166-1 translations ]
+  * Indonesian by Andhika Padmawan (TP)
 
 
 iso-codes 3.69
