@@ -4,7 +4,7 @@
 #
 Name     : iso-codes
 Version  : 3.71
-Release  : 2
+Release  : 3
 URL      : http://pkg-isocodes.alioth.debian.org/downloads/iso-codes-3.71.tar.xz
 Source0  : http://pkg-isocodes.alioth.debian.org/downloads/iso-codes-3.71.tar.xz
 Summary  : ISO country, language, script and currency codes and translations
