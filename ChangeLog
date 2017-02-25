@@ -1,3 +1,35 @@
+iso-codes 3.74
+--------------
+Dr. Tobias Quathamer <toddy@debian.org>
+Mon, 16 Jan 2017
+
+  [ ISO 3166-2 ]
+  * Remove GB- prefix from parent code for Great Britain.
+    Closes: alioth#315604
+
+
+iso-codes 3.73
+--------------
+Dr. Tobias Quathamer <toddy@debian.org>
+Tue, 3 Jan 2017
+
+  [ ISO 3166-2 ]
+  * Remove CZ- prefix from parent code for Czechia.
+
+
+iso-codes 3.72
+--------------
+Dr. Tobias Quathamer <toddy@debian.org>
+Thu, 8 Dec 2016
+
+  [ ISO 3166-2 ]
+  * Update from iso.org for Great Britain. Thanks to Vitali Yakavenka
+    for the bug report. Closes: alioth#315563
+
+  [ ISO 3166-2 translations ]
+  * German by Dr. Tobias Quathamer
+
+
 iso-codes 3.71
 --------------
 Dr. Tobias Quathamer <toddy@debian.org>
