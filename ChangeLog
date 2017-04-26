@@ -1,3 +1,55 @@
+iso-codes 3.75
+--------------
+Dr. Tobias Quathamer <toddy@debian.org>
+Tue, 25 Apr 2017
+
+  [ ISO 3166-1 ]
+  * Add 'Vietnam' as common name
+
+  [ ISO 3166-2 ]
+  * Update French metropolitan regions. Thanks to Matthieu OLIVIER
+    for the bug report. Closes: alioth#315693
+
+  [ ISO 4217 ]
+  * Add new Belarusian Ruble, thanks to Gediminas Rastenis for
+    the bug report. Closes: alioth#315696
+
+  [ ISO 639-2 translations ]
+  * Czech by Miroslav Kure. Closes: #855148
+  * French by Alban Vidal
+
+  [ ISO 639-3 translations ]
+  * Swedish by Josef Andersson (TP)
+  * French by Alban Vidal
+
+  [ ISO 639-5 translations ]
+  * French by Alban Vidal
+
+  [ ISO 3166-1 translations ]
+  * Czech by Miroslav Kure. Closes: #855149
+  * German by Dr. Tobias Quathamer
+
+  [ ISO 3166-2 translations ]
+  * French by Alban Vidal
+  * German by Dr. Tobias Quathamer
+
+  [ ISO 4217 translations ]
+  * French by Alban Vidal
+  * Ukrainian by Yuri Chornoivan (TP)
+  * Polish by Jakub Bogusz (TP)
+  * Greek by Vangelis Skarmoutsos (TP)
+  * Italian by Luca Ferretti (TP)
+  * Russian by Yuri Kozlov (TP)
+  * Croatian by Božidar Putanec (TP)
+  * Swedish by Anders Jonsson (TP)
+
+  [ ISO 15924 translations ]
+  * Ukrainian by Yuri Chornoivan (TP)
+  * Polish by Jakub Bogusz (TP)
+  * Russian by Yuri Kozlov (TP)
+  * Swedish by Anders Jonsson (TP)
+
+
 iso-codes 3.74
 --------------
 Dr. Tobias Quathamer <toddy@debian.org>
