@@ -6,7 +6,7 @@
 #
 Name     : iso-codes
 Version  : 3.75
-Release  : 6
+Release  : 7
 URL      : http://pkg-isocodes.alioth.debian.org/downloads/iso-codes-3.75.tar.xz
 Source0  : http://pkg-isocodes.alioth.debian.org/downloads/iso-codes-3.75.tar.xz
 Source99 : http://pkg-isocodes.alioth.debian.org/downloads/iso-codes-3.75.tar.xz.sig
