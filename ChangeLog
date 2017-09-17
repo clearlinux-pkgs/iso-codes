@@ -1,3 +1,36 @@
+iso-codes 3.76
+--------------
+Dr. Tobias Quathamer <toddy@debian.org>
+Sun, 17 Sep 2017
+
+  [ ISO 3166-3 ]
+  * Add alpha_2 codes to ISO 3166-3.
+    Thanks to Adrian Mönnich for the suggestion. Closes: alioth#315741
+  * Correct numeric code for Netherlands Antilles (ANHH) from 532 to 530.
+
+  [ ISO 3166-1 translations ]
+  * French by Alban Vidal
+  * Japanese by Yasuaki Taniguchi (TP)
+  * Slovak by Ivan Masár
+
+  [ ISO 3166-2 translations ]
+  * French by Alban Vidal
+
+  [ ISO 4217 translations ]
+  * Italian by Sebastiano Pistore (TP)
+  * Japanese by Yasuaki Taniguchi (TP)
+
+  [ ISO 639-2 translations ]
+  * Slovak by Ivan Masár
+
+  [ ISO 639-3 translations ]
+  * Chinese (traditional) by Cheng-Chia Tseng (TP)
+  * Basque by Mikel Olasagasti Uranga (TP)
+
+  [ ISO 15924 translations ]
+  * Danish by Joe Hansen (TP)
+
+
 iso-codes 3.75
 --------------
 Dr. Tobias Quathamer <toddy@debian.org>
@@ -1164,6 +1197,13 @@ Tue, 1 May 2012
       Closes: alioth#313599
     - correct code for "São Lourenço dos Órgãos".
       Closes: alioth#313598
+    - ensure uniqueness of entries. Closes: #649581, alioth#313628
+      * CV-SL now uniquely identifies “Sal” the municipality;
+        CV-SO is the new code for “São Lourenço dos Órgãos” the municipality.
+      * ID-MA now uniquely identifies “Maluku” the province;
+        ID-ML is the new code for “Maluku” the geographical unit.
+      * IE-C now uniquely identifies “Connaught” the province;
+        IE-CO is the new code for “Cork” the county.
     - Thanks to Daniel Atallah for pointing this.
     - many other changes to many other countries...:-)
 
