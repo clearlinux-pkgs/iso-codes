@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x1302F1F036EBEB19 (toddy@debian.org)
 #
 Name     : iso-codes
-Version  : 3.76
-Release  : 8
-URL      : http://pkg-isocodes.alioth.debian.org/downloads/iso-codes-3.76.tar.xz
-Source0  : http://pkg-isocodes.alioth.debian.org/downloads/iso-codes-3.76.tar.xz
-Source99 : http://pkg-isocodes.alioth.debian.org/downloads/iso-codes-3.76.tar.xz.sig
+Version  : 3.77
+Release  : 9
+URL      : http://pkg-isocodes.alioth.debian.org/downloads/iso-codes-3.77.tar.xz
+Source0  : http://pkg-isocodes.alioth.debian.org/downloads/iso-codes-3.77.tar.xz
+Source99 : http://pkg-isocodes.alioth.debian.org/downloads/iso-codes-3.77.tar.xz.sig
 Summary  : ISO country, language, script and currency codes and translations
 Group    : Development/Tools
 License  : LGPL-2.1
@@ -52,16 +52,16 @@ locales components for the iso-codes package.
 
 
 %prep
-%setup -q -n iso-codes-3.76
+%setup -q -n iso-codes-3.77
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1505665076
+export SOURCE_DATE_EPOCH=1511360152
 %configure --disable-static
-make V=1  %{?_smp_mflags}
+make  %{?_smp_mflags}
 
 %check
 export LANG=C
@@ -71,7 +71,7 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make VERBOSE=1 V=1 %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1505665076
+export SOURCE_DATE_EPOCH=1511360152
 rm -rf %{buildroot}
 %make_install
 %find_lang iso_3166-1
