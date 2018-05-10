@@ -6,7 +6,7 @@
 #
 Name     : iso-codes
 Version  : 3.77
-Release  : 10
+Release  : 11
 URL      : http://pkg-isocodes.alioth.debian.org/downloads/iso-codes-3.77.tar.xz
 Source0  : http://pkg-isocodes.alioth.debian.org/downloads/iso-codes-3.77.tar.xz
 Source99 : http://pkg-isocodes.alioth.debian.org/downloads/iso-codes-3.77.tar.xz.sig
