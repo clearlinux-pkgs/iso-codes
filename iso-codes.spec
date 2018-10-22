@@ -6,15 +6,16 @@
 #
 Name     : iso-codes
 Version  : 3.77
-Release  : 12
-URL      : http://pkg-isocodes.alioth.debian.org/downloads/iso-codes-3.77.tar.xz
-Source0  : http://pkg-isocodes.alioth.debian.org/downloads/iso-codes-3.77.tar.xz
-Source99 : http://pkg-isocodes.alioth.debian.org/downloads/iso-codes-3.77.tar.xz.sig
+Release  : 13
+URL      : https://salsa.debian.org/iso-codes-team/iso-codes/uploads/053dcee773a67523328628c92dd7e919/iso-codes-3.77.tar.xz
+Source0  : https://salsa.debian.org/iso-codes-team/iso-codes/uploads/053dcee773a67523328628c92dd7e919/iso-codes-3.77.tar.xz
+Source99 : https://salsa.debian.org/iso-codes-team/iso-codes/uploads/053dcee773a67523328628c92dd7e919/iso-codes-3.77.tar.xz.sig
 Summary  : ISO country, language, script and currency codes and translations
 Group    : Development/Tools
 License  : LGPL-2.1
-Requires: iso-codes-data
-Requires: iso-codes-locales
+Requires: iso-codes-data = %{version}-%{release}
+Requires: iso-codes-license = %{version}-%{release}
+Requires: iso-codes-locales = %{version}-%{release}
 BuildRequires : python3-dev
 
 %description
@@ -36,11 +37,19 @@ data components for the iso-codes package.
 %package dev
 Summary: dev components for the iso-codes package.
 Group: Development
-Requires: iso-codes-data
-Provides: iso-codes-devel
+Requires: iso-codes-data = %{version}-%{release}
+Provides: iso-codes-devel = %{version}-%{release}
 
 %description dev
 dev components for the iso-codes package.
+
+
+%package license
+Summary: license components for the iso-codes package.
+Group: Default
+
+%description license
+license components for the iso-codes package.
 
 
 %package locales
@@ -59,7 +68,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1511360152
+export SOURCE_DATE_EPOCH=1540234873
 %configure --disable-static
 make  %{?_smp_mflags}
 
@@ -71,8 +80,10 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make VERBOSE=1 V=1 %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1511360152
+export SOURCE_DATE_EPOCH=1540234873
 rm -rf %{buildroot}
+mkdir -p %{buildroot}/usr/share/package-licenses/iso-codes
+cp COPYING %{buildroot}/usr/share/package-licenses/iso-codes/COPYING
 %make_install
 %find_lang iso_3166-1
 %find_lang iso_3166-3
@@ -126,6 +137,10 @@ rm -rf %{buildroot}
 %files dev
 %defattr(-,root,root,-)
 /usr/lib64/pkgconfig/iso-codes.pc
+
+%files license
+%defattr(0644,root,root,0755)
+/usr/share/package-licenses/iso-codes/COPYING
 
 %files locales -f iso_3166-1.lang -f iso_3166-3.lang -f iso_3166.lang -f iso_639-2.lang -f iso_639-3.lang -f iso_639.lang -f iso_639_3.lang -f iso_15924.lang -f iso_3166-2.lang -f iso_3166_2.lang -f iso_4217.lang -f iso_639-5.lang -f iso_639_5.lang
 %defattr(-,root,root,-)
