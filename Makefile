@@ -1,5 +1,5 @@
 PKG_NAME := iso-codes
-URL = https://salsa.debian.org/iso-codes-team/iso-codes/uploads/053dcee773a67523328628c92dd7e919/iso-codes-3.77.tar.xz
+URL = https://salsa.debian.org/iso-codes-team/iso-codes/uploads/049ce6aac94d842be809f4063950646c/iso-codes-4.1.tar.xz
 ARCHIVES = 
 
 include ../common/Makefile.common

@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x1302F1F036EBEB19 (toddy@debian.org)
 #
 Name     : iso-codes
-Version  : 3.77
-Release  : 13
-URL      : https://salsa.debian.org/iso-codes-team/iso-codes/uploads/053dcee773a67523328628c92dd7e919/iso-codes-3.77.tar.xz
-Source0  : https://salsa.debian.org/iso-codes-team/iso-codes/uploads/053dcee773a67523328628c92dd7e919/iso-codes-3.77.tar.xz
-Source99 : https://salsa.debian.org/iso-codes-team/iso-codes/uploads/053dcee773a67523328628c92dd7e919/iso-codes-3.77.tar.xz.sig
+Version  : 4.1
+Release  : 14
+URL      : https://salsa.debian.org/iso-codes-team/iso-codes/uploads/049ce6aac94d842be809f4063950646c/iso-codes-4.1.tar.xz
+Source0  : https://salsa.debian.org/iso-codes-team/iso-codes/uploads/049ce6aac94d842be809f4063950646c/iso-codes-4.1.tar.xz
+Source99 : https://salsa.debian.org/iso-codes-team/iso-codes/uploads/049ce6aac94d842be809f4063950646c/iso-codes-4.1.tar.xz.sig
 Summary  : ISO country, language, script and currency codes and translations
 Group    : Development/Tools
 License  : LGPL-2.1
@@ -19,10 +19,9 @@ Requires: iso-codes-locales = %{version}-%{release}
 BuildRequires : python3-dev
 
 %description
-iso-codes
-=========
-<http://pkg-isocodes.alioth.debian.org/>
-This package provides lists of various ISO standards (e.g. country,
+# iso-codes
+https://salsa.debian.org/iso-codes-team/iso-codes
+This project provides lists of various ISO standards (e.g. country,
 language, language scripts, and currency names) in one place, rather
 than repeated in many programs throughout the system.
 
@@ -61,14 +60,14 @@ locales components for the iso-codes package.
 
 
 %prep
-%setup -q -n iso-codes-3.77
+%setup -q -n iso-codes-4.1
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1540234873
+export SOURCE_DATE_EPOCH=1546471647
 %configure --disable-static
 make  %{?_smp_mflags}
 
@@ -80,14 +79,14 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make VERBOSE=1 V=1 %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1540234873
+export SOURCE_DATE_EPOCH=1546471647
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/iso-codes
 cp COPYING %{buildroot}/usr/share/package-licenses/iso-codes/COPYING
 %make_install
 %find_lang iso_3166-1
-%find_lang iso_3166-3
 %find_lang iso_3166
+%find_lang iso_3166-3
 %find_lang iso_639-2
 %find_lang iso_639-3
 %find_lang iso_639
@@ -142,6 +141,6 @@ cp COPYING %{buildroot}/usr/share/package-licenses/iso-codes/COPYING
 %defattr(0644,root,root,0755)
 /usr/share/package-licenses/iso-codes/COPYING
 
-%files locales -f iso_3166-1.lang -f iso_3166-3.lang -f iso_3166.lang -f iso_639-2.lang -f iso_639-3.lang -f iso_639.lang -f iso_639_3.lang -f iso_15924.lang -f iso_3166-2.lang -f iso_3166_2.lang -f iso_4217.lang -f iso_639-5.lang -f iso_639_5.lang
+%files locales -f iso_3166-1.lang -f iso_3166.lang -f iso_3166-3.lang -f iso_639-2.lang -f iso_639-3.lang -f iso_639.lang -f iso_639_3.lang -f iso_15924.lang -f iso_3166-2.lang -f iso_3166_2.lang -f iso_4217.lang -f iso_639-5.lang -f iso_639_5.lang
 %defattr(-,root,root,-)
 
