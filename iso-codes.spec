@@ -4,7 +4,7 @@
 #
 Name     : iso-codes
 Version  : 4.2
-Release  : 15
+Release  : 16
 URL      : https://salsa.debian.org/iso-codes-team/iso-codes/-/archive/iso-codes-4.2/iso-codes-iso-codes-4.2.tar.gz
 Source0  : https://salsa.debian.org/iso-codes-team/iso-codes/-/archive/iso-codes-4.2/iso-codes-iso-codes-4.2.tar.gz
 Summary  : Lists of the country, language, and currency names
