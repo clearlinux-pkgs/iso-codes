@@ -7,7 +7,7 @@
 #
 Name     : iso-codes
 Version  : 4.17.0
-Release  : 35
+Release  : 36
 URL      : https://salsa.debian.org/iso-codes-team/iso-codes/-/archive/v4.17.0/iso-codes-v4.17.0.tar.gz
 Source0  : https://salsa.debian.org/iso-codes-team/iso-codes/-/archive/v4.17.0/iso-codes-v4.17.0.tar.gz
 Summary  : ISO country, language, script and currency codes and translations
